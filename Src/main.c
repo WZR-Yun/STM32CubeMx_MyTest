@@ -248,7 +248,7 @@ int main(void)
         }
         /*执行操作*/
         printf("DATA:%d,%d,%d\n",spwm[i],spwm[i+399],spwm[i+199]);
-        if(++i >= 600)  //一周期采样600个点
+        if(i++ >= 600)  //一周期采样600个点
             i = 0;
         //设置PWM占空比
         if(pluse <= 5000&&pluse >= 500) {
